@@ -1,0 +1,298 @@
+/*Reset CSS*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Tajawal",sans-serif;
+}
+
+/*Configuração do corpo da página*/
+body{
+    background-color: #ECD8CA;
+}
+
+.container{
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/*Configuranção do cabeçalho*/
+header{
+    padding: 16px 0;
+    color: #5B4644;
+}
+
+header .container,
+section .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*Configuração separadores*/
+.separador{
+    width: 940px;
+    height: 7px;
+    background-color: #5B4644;
+    margin-top: 16px;
+    margin-right: 64px;
+}
+
+.separador2{
+    width: 1220px;
+    height: 7px;
+    background-color: #5B4644;
+    max-width: 1280px;
+}
+
+.separador3{
+    width: 1220px;
+    height: 7px;
+    background-color: #5B4644;
+}
+
+.separador4{
+    width: 1280px;
+    height: 7px;
+    background-color: #5B4644;
+}
+
+/*Configuração About*/
+#about p,
+.special li{
+    font-size: 16px;
+}
+
+.photo-list li{
+    display: inline;
+    margin-right: 8px;
+}
+
+.photo-list img{
+    height: 124px;
+    margin-bottom: 8px;
+}
+
+.photo-list a,
+.container a{
+    text-decoration: none;
+    color: #5B4644;
+    font-family: "Tajawal",sans-serif;
+    margin-top: 32px;
+}
+
+.photo-list a:hover,
+.container a:hover{
+    text-decoration: underline;
+}
+
+.confeiteira img{
+    height: 640px;
+    margin-left: 124px;
+    margin-right: 64px;
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+                -6px -6px 10px -1px rgba(129, 107, 107, 0.7);
+    border-radius: 8px;
+}
+
+/*Configuração do section*/
+section{
+    padding: 24px 0;
+    color:#5B4644;
+}
+
+section p{
+    margin-bottom: 8px;
+}
+
+section h2,
+section h3{
+    margin-bottom: 16px;
+}
+
+section .container{
+    align-items: flex-start;
+}
+
+/*Configuração Contatos*/
+
+#contact-form .container{
+    display: flex;
+    justify-content: space-between;
+}
+
+#contact-form .faq-quest{
+    margin-left: 32px;
+    margin-right: 24px;
+    font-size: 18px;
+}
+
+#contact-form .faq-quest h2{
+    margin-left: 48px;
+}
+
+.contact{
+    display: flex;
+    justify-content: space-between;
+}
+
+.container p{
+    font-size: 20px;
+}
+
+.special{
+    font-size: 20px;
+}
+
+/*Configuração do formulario*/
+form input,
+form textarea,
+form button{
+    display: block;
+    width: 320px;
+    margin-bottom: 8px;
+    padding: 8px;
+}
+
+form textarea{
+    resize: none;
+    height: 180px;
+}
+
+form button{
+    background-color: #5B4644;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover{
+    background-color: #9a7976;
+}
+
+input:focus, textarea:focus{
+    outline-color: #5B4644;
+}
+
+form img{
+    height: 48px;
+}
+
+.instagram{
+    margin-left: 32px;
+}
+
+.redesSociais{
+    margin-top: 24px;
+}
+
+/*Configuração do rodapé*/
+footer{
+    background-color: #5B4644;
+    color: #fff;
+    padding: 8px 0;
+}
+
+footer .container{
+    display: flex;
+    justify-content: center;
+}
+
+footer .final p{
+    font-size: 12px;
+}
+
+/*Configuração de Perguntas frenquentes*/
+.faq-quest li{
+    margin-left: 50px;
+    list-style: none;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 8px;
+    background: #5B4644;
+    color: #fff;
+}
+
+.faq-quest li label{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 5px;
+    cursor: pointer;
+}
+
+label::before{
+    content: '+';
+    margin-right: 10px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+input[type="radio"]{
+    display: none;
+}
+
+.faq-quest .content{
+    color: #fff;
+    padding: 0 10px;
+    line-height: 26px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s, padding 0.5s;
+}
+
+.faq-quest input[type="radio"]:checked + label + .content{
+    max-height: 400px;
+    padding: 10px 10px 20px;
+}
+
+.faq-quest input[type="radio"]:checked + label::before{
+    content: '-';
+}
+
+/*Configuração Vendas de Bolos e Personalizados*/
+#cakeSales{
+    display: flex;
+}
+
+#cakeSales p{
+    font-size: 16px;
+}
+
+#cakeSales .orderSales img{
+    height: 180px;
+    margin-right: 12px;
+}
+
+fieldset{
+    padding: 16px;
+    border: #5B4644 solid 2px;
+    border-radius: 10px;
+    margin-left: 12px;
+}
+
+fieldset #orderSales{
+    text-align: center;
+}
+
+fieldset textarea{
+    resize: none;
+    height: 115px;
+}
+
+.contentProd{
+    color: #5B4644;
+    margin-left: 16px;
+}
+
+.personalOrder{
+    color: #5B4644;
+    margin-left: 16px;
+    margin-top: 16px;
+}
+
+#personalized p{
+    font-size: 16px;
+}
